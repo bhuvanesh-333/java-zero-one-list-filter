@@ -1,0 +1,82 @@
+# Java Zero One List Filter
+
+This is a simple Java program that stores **0s and 1s** in a `List<Integer>` and then prints all 0s together and all 1s together by looping over the list.
+
+## Features
+
+- Uses `ArrayList<Integer>` to store a sequence of 0s and 1s.
+- Iterates through the list to:
+  - Print all 0s in one pass.
+  - Print all 1s in another pass.
+- Good for beginners learning lists and conditional checks in Java.
+
+## Code
+
+package Simple;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ZeroOne {
+public static void main(String[] args) {
+
+text
+    // Step 1: Create list
+    List<Integer> list = new ArrayList<>();
+    list.add(0);
+    list.add(1);
+    list.add(0);
+    list.add(1);
+    list.add(0);
+    list.add(1);
+    list.add(0);
+    list.add(1);
+    list.add(0);
+    list.add(1);
+
+    // Step 2: Print all 0s
+    System.out.print("0s: ");
+    for (int num : list) {
+        if (num == 0) {
+            System.out.print(num);
+        }
+    }
+
+    // Step 3: Print all 1s
+    System.out.print("\n1s: ");
+    for (int num : list) {
+        if (num == 1) {
+            System.out.print(num);
+        }
+    }
+}
+}
+
+text
+
+## How to run
+
+1. Clone the repository:
+git clone https://github.com/<your-username>/java-zero-one-list-filter.git
+
+text
+2. Ensure the file structure matches the package:
+- `src/Simple/ZeroOne.java`
+3. Compile and run:
+javac Simple/ZeroOne.java
+java Simple.ZeroOne
+
+text
+
+## Sample output
+
+0s: 00000
+1s: 11111
+
+text
+
+## Learning goals
+
+- Practice using `ArrayList<Integer>` for storing values.
+- Understand iterating over a list with the enhanced `for` loop.
+- Use simple conditions to **filter** values in a list.
